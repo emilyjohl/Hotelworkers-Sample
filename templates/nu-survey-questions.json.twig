@@ -1,0 +1,1554 @@
+[
+     {
+          "label": "{{ 'Let’s begin' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": false,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "classification",
+                    "label": "{{ 'Select your job classification.' | t | raw }}",
+                    "body": "",
+                    "field": "select",
+                    "body_2": "",
+                    "choices": [
+                        {
+                           "value": "Housekeeping",
+                           "display": "{{ 'Housekeeping' | t | raw }}",
+                           "selectable": false
+                        },
+                        {
+                            "value": "Houseman",
+                            "display": "{{ 'Houseman' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Laundry Attendant",
+                            "display": "{{ 'Laundry Attendant' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Room Attendant",
+                            "display": "{{ 'Room Attendant' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Room Inspector/Housekeeping Supervisor",
+                            "display": "{{ 'Room Inspector/Housekeeping Supervisor' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                           "value": "Front Office",
+                           "display": "{{ 'Front Office' | t | raw }}",
+                           "selectable": false
+                        },
+                        {
+                            "value": "Bellperson",
+                            "display": "{{ 'Bellperson' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Concierge",
+                            "display": "{{ 'Concierge' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Doorperson",
+                            "display": "{{ 'Doorperson' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Front Desk Agent",
+                            "display": "{{ 'Front Desk Agent' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Lobby Attendant",
+                            "display": "{{ 'Lobby Attendant' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Night Auditor",
+                            "display": "{{ 'Night Auditor' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                           "value": "Food Service",
+                           "display": "{{ 'Food Service' | t | raw }}",
+                           "selectable": false
+                        },
+                        {
+                            "value": "Barback",
+                            "display": "{{ 'Barback' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+
+                        {
+                            "value": "Barista",
+                            "display": "{{ 'Barista' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+
+                        {
+                            "value": "Bartender",
+                            "display": "{{ 'Bartender' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+
+                        {
+                            "value": "Busser",
+                            "display": "{{ 'Busser' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+
+                        {
+                            "value": "Host",
+                            "display": "{{ 'Host' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+
+                        {
+                            "value": "Minibar Attendant",
+                            "display": "{{ 'Minibar Attendant' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Room Service Server",
+                            "display": "{{ 'Room Service Server' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Room Service Busser",
+                            "display": "{{ 'Room Service Busser' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Server",
+                            "display": "{{ 'Server' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                           "value": "Kitchen",
+                           "display": "{{ 'Kitchen' | t | raw }}",
+                           "selectable": false
+                        },
+                        {
+                            "value": "Cook",
+                            "display": "{{ 'Cook' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Dishwasher",
+                            "display": "{{ 'Dishwasher' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Employee Cafeteria Attendant",
+                            "display": "{{ 'Employee Cafeteria Attendant' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Prep Cook",
+                            "display": "{{ 'Prep Cook' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Sous Chef",
+                            "display": "{{ 'Sous Chef' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                           "value": "Engineering",
+                           "display": "{{ 'Engineering' | t | raw }}",
+                           "selectable": false
+                        },
+                        {
+                            "value": "Electrician",
+                            "display": "{{ 'Electrician' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Engineer",
+                            "display": "{{ 'Engineer' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "HVAC Specialist",
+                            "display": "{{ 'HVAC Specialist' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Painter",
+                            "display": "{{ 'Painter' | t | raw }}",
+                            "selectable": true,
+                            "indented": true
+                        },
+                        {
+                            "value": "Security",
+                            "display": "{{ 'Security' | t | raw }}",
+                            "selectable": true,
+                            "indented": false
+                        }
+                    ],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": ""
+               },
+               {
+                   "type": "question",
+                    "subquestion": false,
+                    "handle": "zip",
+                    "label": "{{ 'Enter the ZIP code of your hotel.' | t | raw }}",
+                    "body": "",
+                    "field": "zip",
+                    "body_2": "{{ '<p>We represent hotel workers throughout New York and New Jersey. Enter the ZIP code of your hotel so we can compare your conditions to those of a union hotel worker in your area.</p>' | t | raw }}",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": ""
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "shop",
+                    "label": "{{ 'What hotel do you work at? (optional)' | t | raw }}",
+                    "body": "",
+                    "field": "input",
+                    "body_2": "{{ '<p>The information you provide here is confidential.</p>' | t | raw }}",
+                    "choices": [],
+                    "default": "",
+                    "required": false,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": ""
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Wages' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "rate_per_hour",
+                    "label": "{{ 'How much are you paid per hour?' | t | raw }}",
+                    "body": "",
+                    "field": "money",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "responses.mergeVars.wageRate",
+                    "union_response_IWA": "{{ '${(responses.mergeVars.county == \'New York\') ? (\'<p>Under our master contract in your area, a \' + responses.classification + \' typically starts at <strong>\' + currency(responses.mergeVars.wageRate).multiply(0.75).format() + \' per hour</strong> \' + (responses.mergeVars.classification.tipped ? \'(before tips)\' : \'\') + \' and within several years, makes their way up to the full rate, currently <strong>\' + currency(responses.mergeVars.wageRate).format() + \' per hour</strong> \' + (responses.mergeVars.classification.tipped ? \'(before tips).\' : \'.\') + \'</p>\') : (\'<p>Under our master contract in your area, a \' + responses.classification + \' typically starts at <strong>\' + currency(responses.mergeVars.wageRate).multiply(0.75).format() + \'</strong> per hour\' + (responses.mergeVars.classification.tipped ? \' (before tips)\' : \'\') + \'.</p>\')}'| t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Under our master contract in your area, a union-represented ${responses.classification} typically makes <strong>${currency(responses.mergeVars.wageRate).format()} per hour</strong>${responses.mergeVars.classification.tipped ? \' (before tips).\' : \'.\'}</p>'| t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Wage increases' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "yearly_raises",
+                    "label": "{{ 'Do you receive yearly raises of ${currency(responses.mergeVars.wageItemRates[\'Yearly Increase \' + (responses.mergeVars.classification.tipped ? \'(Tipped)\' : \'(NonTipped)\')]).format()} an hour or more?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Our Union\'s ${responses.mergeVars.masterZone.contractFullName}, which is in effect until ${responses.mergeVars.masterZone.contractExpirationYear}, includes a ${currency(responses.mergeVars.wageItemRates[\'Yearly Increase \' + (responses.mergeVars.classification.tipped ? \'(Tipped)\' : \'(NonTipped)\')]).format()} per hour raise for ${responses.mergeVars.classification.tipped ? \'tipped\' : \'non-tipped\'} union workers every year until the contract expires. This rate is adjusted for new employees for the first few years.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Under our Union\'s ${responses.mergeVars.masterZone.contractFullName}, which is in effect until ${responses.mergeVars.masterZone.contractExpirationYear}, ${responses.mergeVars.classification.tipped ? \'tipped\' : \'non-tipped\'} union workers will receive a raise of ${currency(responses.mergeVars.wageItemRates[\'Yearly Increase \' + (responses.mergeVars.classification.tipped ? \'(Tipped)\' : \'(NonTipped)\')]).format()} per hour in both 2021 and 2022.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Part-time premium pay' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "part_time_premium_pay",
+                    "label": "{{ 'Do you receive premium pay if you are available to work full-time but your employer offers you less than a full-time schedule?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Full-time${responses.mergeVars.classification.tipped ? \', tipped\' : \'\'} union workers in NYC receive time and a quarter pay for the first ${responses.mergeVars.classification.tipped ? \'20\' : \'17.5\'} hours they work any week they are scheduled less than 5 days. The part-time premium rate for most Union-represented ${pluralize(responses.classification)} in your area is ${currency(responses.mergeVars.wageRate).multiply(responses.mergeVars.wageItemRates[\'Part Time Premium Pay\']).format()} per hour. </p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Union workers in your area who are scheduled for less than a full work week are paid an additional ${responses.mergeVars.classification.tipped ? currency(responses.mergeVars.wageItemRates[\'Part Time Premium Pay (Tipped)\']).format() : currency(responses.mergeVars.wageItemRates[\'Part Time Premium Pay (NonTipped)\']).format()} an hour. A Union-represented ${responses.classification}’s part-time premium pay rate is: ${responses.mergeVars.classification.tipped ? currency(responses.mergeVars.wageRate).add(responses.mergeVars.wageItemRates[\'Part Time Premium Pay (Tipped)\']).format() : currency(responses.mergeVars.wageRate).add(responses.mergeVars.wageItemRates[\'Part Time Premium Pay (NonTipped)\']).format()} per hour.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Extra pay for extra work' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "extra_pay_extra_work",
+                    "label": "{{ 'Do you have any say when management adds or changes your job duties?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>In a union hotel, management cannot assign significant new responsibilities to a union member without negotiating with our Union. As a result, union representatives are often able to negotiate extra pay in exchange for doing new job duties.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Overtime' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "overtime",
+                    "label": "{{ 'Do you get overtime pay?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA_1": "<p>{{ 'Yes' | t }}</p>",
+                    "union_response_IWA": "{{ '<p>Under the union contract, the overtime rate is time and a half. The overtime rate of a union-represented ${responses.classification} in your area is ${currency(responses.mergeVars.wageRate).multiply(1.5).format()} per hour, and union workers get overtime:</p> <ul><li>After working 35, 37.5, or 40 hours, depending on their regular work week (The law only requires overtime after 40 hours)</li><li>For all hours worked over 7 or 8 hours, depending on their regular work day</li><li>On the 6th or 7th day in a row of work, regardless of if the days fall in two different pay weeks</li></ul>' | t | raw }}",
+                    "union_response_GRIWA_1": "<p>{{ 'Yes' | t }}</p>",
+                    "union_response_GRIWA": "{{ '<p>Under the union contract, the overtime rate is time and a half. The overtime rate of a union-represented ${responses.classification} in your area is ${currency(responses.mergeVars.wageRate).multiply(1.5).format()} per hour, and union workers get overtime:</p><ul><li>After working 40 hours a week</li><li>For all hours worked over 8 hours in a work day</li><li>On the 6th or 7th day in a row of work, regardless of if the days fall in two different pay weeks</li></ul>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "overtime_rate",
+                    "label": "{{ 'What is your overtime rate?' | t | raw }}",
+                    "body": "",
+                    "field": "money",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.overtime",
+                    "flip_comparison": false,
+                    "union_comparison_value": "currency(responses.mergeVars.wageRate).multiply(1.5)",
+                    "union_response": "{{ '<p>The overtime rate of a union-represented ${responses.classification} in your area is ${currency(responses.mergeVars.wageRate).multiply(1.5).format()} per hour.</p>' | t | raw }}"
+               },
+               {
+                    "type": "subsectionheader",
+                    "body": "{{ 'Do you receive overtime pay if:' | t }}",
+                    "applicable_if": "responses.overtime"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "overtime_for_long_week",
+                    "label_IWA": "{{ 'You work more hours than your regular full-time schedule (either 35 or 40 hours) in a work week?' | t | raw }}",
+                    "label_GRIWA": "{{ 'You work more than 40 hours in a work week?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.overtime",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>By law, employers need to pay overtime after you work 40 hours in a week, yet under our Union\'s contract, there are many circumstances in which management must pay overtime even if members don\'t work 40 hours that week. For instance, union workers receive overtime pay after working 35, 37.5, or 40 hours, depending on their regular work week.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>By law employers need to pay overtime after you work 40 hours in a week, yet under our Union\'s contract, there are many circumstances in which management must pay overtime even if members don\'t work 40 hours that week.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "overtime_for_long_day",
+                    "label_IWA": "{{ 'You work more than your regular hours (7 or 8) in a day?' | t | raw }}",
+                    "label_GRIWA": "{{ 'You work more than 8 hours in a day?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.overtime",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Under our master contract, union workers must receive overtime pay for all hours worked over 7 or 8 hours in a day, (depending on their regular work day) <em>even</em> if they do not work more than 40 hours that week.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Under our Union’s ${responses.mergeVars.masterZone.contractFullName}, union workers must receive overtime pay for all hours worked over 8 hours in a day <em>even</em> if they do not work more than 40 hours that week.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "overtime_for_6_consecutive_days",
+                    "label": "{{ 'You work 6 or more days in a row?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.overtime",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Union workers who work 6 or 7 days in a row receive overtime pay for all hours worked on the 6th or 7th consecutive day <em>even</em> if the days fall in two different paychecks.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Night shift differential' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "night_shift_differential",
+                    "label_IWA": "{{ 'Do you receive extra pay for any hours you work between 8:00 PM and 6:00 AM?' | t | raw }}",
+                    "label_GRIWA": "{{ 'Do you receive extra pay for any hours you work between 11:00 PM and 7:00 AM?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>A union hotel worker receives an extra ${currency(responses.mergeVars.wageItemRates[\'Night Shift Differential Rate\']).format()} per hour, for all hours worked between the hours of 8:00 PM and 6:00 AM. This amount goes up every year.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Effective ${ responses.mergeVars.wageItemRates[\'Night Shift Differential Rate Date Takes Effect\'] }, a union hotel worker in your area receives an extra ${currency(responses.mergeVars.wageItemRates[\'Night Shift Differential Rate\']).format()} per hour, for all hours worked between 11:00 PM and 7:00 AM. This amount goes up every year.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Combination jobs' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "combination_jobs",
+                    "label": "{{ 'Do you ever do the work of a higher paid classification?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": false,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>In a union hotel, management is allowed to assign a union member to relieve a higher paid classification for a maximum of 1 and a 1/2 hours, otherwise the hotel must pay the union member the higher rate of pay. Under no circumstances is management allowed to schedule a union member to do the work of another classification if it would result in a layoff.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>In a union hotel, if management assigns a union member to do the work of the higher paid classification, the hotel must pay the union member the higher rate of pay. Under no circumstances is management allowed to schedule a union member to do the work of another classification if it would result in a layoff.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "combination_jobs_higher_rate",
+                    "label": "{{ 'Do you get the higher rate of pay?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.combination_jobs",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>If a union member does the job of a higher paid classification for more than 1 and 1/2 hours, they are paid the higher rate for the entire week (except in cases of last minute call outs, in which case they only get the higher rate for the day.) In addition, if the union member works in the front office, food preparation, engineering, or maintenance department, management must pay them an extra $10/week in combination job pay.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>If a union worker does the job of a higher paid classification:</p><ul><li>for less than 4 hours, they are paid the higher rate for those hours</li><li>for more than 4 hours, they are paid the higher rate for the entire day</li><li>for more than one shift in a week, they are paid the higher rate for the entire week.</li></ul>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Room quota' | t | raw }}",
+          "body": "",
+          "applicable_if": "responses.classification == 'Room Attendant'",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "quota_reduction",
+                    "label": "{{ 'Does management reduce the number of rooms you have to clean if you have a large number of check-out rooms, rooms with double beds, or if you have to travel to multiple floors?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>In a union hotel, union representatives negotiate a daily room quota, which is the number of credits a room attendant must clean before getting extra pay. Our Union often negotiates a reduction in the daily quota if a room attendant is assigned a certain number of check-out rooms, double beds, or if the room attendant has to travel to multiple floors.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "covid19_clean_stayover_rooms",
+                    "label": "{{ 'During the COVID-19 pandemic, did management stop assigning you to clean stay-over rooms?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": true,
+                    "union_comparison_value": "0",
+                    "union_response": "{{ '<p>Our Union has prevented hotel companies from eliminating daily room cleanings in union hotels. In a union hotel, management must assign room attendants to clean both stay-over and check-out rooms, which ensures more of our members are recalled to work and makes each room attendant’s workload less difficult.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "quota_reduction_drop_rooms",
+                    "label": "{{ 'Are you allowed to \\"drop rooms\\" if you cannot finish your assignment?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>In all of our union hotels, room attendants are allowed to &quot;drop rooms&quot; and clean less than their daily quota when necessary.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "extra_rooms",
+                    "label": "{{ 'Do you receive extra pay for each room that you clean over your quota?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>In union hotels, a room attendant gets an extra ${currency(responses.mergeVars.wageItemRates[\'Extra Room Pay\']).format()} for each extra room they clean above their quota. This amount increases each July 1st.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>In union hotels, a room attendant gets an extra ${currency(responses.mergeVars.wageItemRates[\'Extra Room Pay\']).format()} for each extra room they clean above their quota. This amount increases each April 1st.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "exra_rooms_how_much_per_room",
+                    "label": "{{ 'How much do you receive per extra room?' | t | raw }}",
+                    "body": "",
+                    "field": "money",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.extra_rooms",
+                    "flip_comparison": false,
+                    "union_comparison_value": "responses.mergeVars.wageItemRates['Extra Room Pay']",
+                    "union_response": "{{ '<p>${currency(responses.mergeVars.wageItemRates[\'Extra Room Pay\']).format()}</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Cot Pay' | t | raw }}",
+          "label_GRIWA": "{{ 'Cots, sofa beds, and cribs' | t | raw }}",
+          "body": "",
+          "applicable_if": "responses.classification == 'Room Attendant'",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "cots",
+                    "label_IWA": "{{ 'Do you receive extra pay if you make up a cot?' | t | raw }}",
+                    "label_GRIWA": "{{ 'Do you receive extra pay if you make up a cot, sofa bed, or crib?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA_1": "{{ '<p>Yes</p>' | t | raw }}",
+                    "union_response_IWA_0": "{{ '<p>A union room attendant <strong>in New York City</strong> receives ${currency(responses.mergeVars.wageItemRates[\'Cots Pay\']).format()} for each cot, sofa bed, or crib they make up. This amount goes up every year.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>A union room attendant in your area receives ${currency(responses.mergeVars.wageItemRates[\'Cots Pay\']).format()} for each cot, sofa bed, or crib they make up. This amount goes up every year.</p>' | t | raw }}"
+
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "cots_extra_pay",
+                    "label_IWA": "{{ 'What is your extra pay per cot?' | t | raw }}",
+                    "label_GRIWA": "{{ 'What is your extra pay per cot, sofa bed, or crib?' | t | raw }}",
+                    "body": "",
+                    "field": "money",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.cots",
+                    "flip_comparison": false,
+                    "union_comparison_value_IWA": "5.63",
+                    "union_comparison_value_GRIWA": "4.22",
+                    "union_response": "{{ '<p>${currency(responses.mergeVars.wageItemRates[\'Cots Pay\']).format()}</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'COVID-19 response' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "covid19_laid_off",
+                    "label": "{{ 'Were you laid off during the COVID-19 pandemic?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": false,
+                    "show_comparison": false,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": false
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "covid19_health_insurance",
+                    "label": "{{ 'Has your employer continued paying for your health insurance?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.covid19_laid_off",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Our Union won 9 months of free extended healthcare coverage for most laid-off union workers in your area</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Our Union won 1 year of free extended healthcare coverage for most laid-off union workers in your area.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "covid19_severance",
+                    "label": "{{ 'Has your employer paid you severance pay to supplement your income?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.covid19_laid_off",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>In September 2020, our Union won over $370 million in severance pay for laid-off union workers in order to supplement their income while they are out of work due to the COVID-19 crisis. Union workers who have received severance pay keep their right to be recalled to work in order of seniority when business returns.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "covid19_severance_equal_regular_pay",
+                    "label": "{{ 'When combined with your unemployment benefits, does your severance pay equal your regular weekly pay?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.covid19_laid_off && responses.covid19_severance",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Most union workers are receiving their severance in the form of weekly  payments that along with their unemployment benefits, equal their regular weekly wages.  A union worker covered by our Industry-Wide Agreement would receive 4 days of pay for each year of service at the hotel. So, for example, a ${responses.classification} who has worked at a hotel for 10 years would receive ${currency(responses.mergeVars.wageRate).multiply(7 * 4 * 10).format()} in total severance pay.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Most union workers are receiving their severance in the form of weekly payments that along with their unemployment benefits, equal their regular weekly wages. A union worker covered by our Greater Regional Industry-Wide Agreement would receive 5 days of pay for each year of service at the hotel. So, for example, a ${responses.classification} who has worked at a hotel for 10 years would receive ${currency(responses.mergeVars.wageRate).multiply(8 * 5 * 10).format()} in total severance pay.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "covid19_recall_seniority",
+                    "label": "{{ 'Has your hotel committed to call you back to work in order of seniority when your hotel reopens or needs more staff?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.covid19_laid_off",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Laid-off union workers have the contractual right to be recalled to their jobs in order of seniority. Under our master contracts, it doesn’t matter how long it takes the industry to recover and union hotels to reopen from the pandemic, union workers will have the right to go back to their jobs.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "covid19_recall_seniority_enforcement",
+                    "label": "{{ 'Can you enforce your hotel\'s commitment if they do not call you back to work in order of seniority?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.covid19_laid_off && responses.covid19_recall_seniority",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Non-union workers in New York and New Jersey are \\"at-will\\" employees, meaning that your employer can fire you for almost any reason or no reason at all. Even if your employer has promised to recall you to work in order of seniority, without a union contract, you cannot enforce their promise.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "covid19_safety_precautions",
+                    "label": "{{ 'Has your hotel announced any safety precautions they will implement in light of COVID-19?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>In March 2020, our Union negotiated our first Coronavirus Safety Protocol agreement in order to protect our members on the job. We have continued to negotiate updated agreements to reflect the changing science surrounding COVID-19. The agreement requires that:</p><ul><li>Employers must provide workers personal protective equipment</li><li>Workers get extra paid time off for COVID-19 related issues</li><li>Hotels must update their ventilation systems to prevent airborne transmission</li><li>Hotels must continue to perform daily room cleanings</li></ul>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "covid19_sick_days_testing",
+                    "label": "{{ 'Is your hotel offering any additional paid sick days to get tested for or recover from COVID-19?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>The Union’s Coronavirus Safety Protocol agreement requires union hotels to provide extra paid time off for workers to get tested for COVID-19, to get their vaccine, as well as up to 20 additional paid days off if a vaccinated worker returns to work and contracts COVID-19.' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Healthcare' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "healthcare_medical_dental_vision_weekly_pay",
+                    "label": "{{ 'How much do you pay for medical, dental, and vision insurance each week?' | t | raw }}",
+                    "body": "",
+                    "field": "money",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": true,
+                    "union_comparison_value": "0",
+                    "union_response_IWA": "{{ '<p>Under our Union’s Industry Wide Agreement, employers pay the full cost of individual and family medical, dental, and vision insurance. Union workers pay $0 a month to go to our state of the art health centers and pharmacies in Brooklyn, Queens, Midtown, and Harlem. Union workers who live outside of New York City get Blue Cross Blue Shield coverage. We consistently negotiate for workers at new union hotels to have the choice to keep their employer\'s plan or join the Union\'s health plan.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>In <em>most</em> union hotels in your area, employee contributions are capped at $25 per month for high-quality family health insurance. We typically negotiate for workers at new union hotels to have the choice to keep their employer\'s plan or join the Union\'s health plan.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "healthcare_cover_family",
+                    "label": "{{ 'Does your healthcare cover your entire family?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Union employers pay the full cost of family health insurance under our Industry-Wide Agreement.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Our Union always negotiates for employers to provide affordable family health insurance - not just individual coverage.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "healthcare_reimbursement_account",
+                    "label": "{{ 'Does your employer provide you a health reimbursement account to cover out-of-pocket medical expenses?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Union workers receive $200 per single person, or $400 per family, per year in a health reimbursement account. The funds in their account can be used for prescriptions and other medical expenses approved by the IRS.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Union workers receive $100 per year in a health reimbursement account. The funds in their account can be used for prescriptions and other medical expenses approved by the IRS.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Retirement' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "sectionheader",
+                    "body": "{{ 'Pension:' | t }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "retirement_pension",
+                    "label": "{{ 'Does your employer contribute to a pension on your behalf? (Note: A pension is not the same as a 401(k).)' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Under our Industry Wide Agreement, union hotels have to contribute to a pension fund for employees. Unlike a 401(k), a pension plan is a \\"defined benefit plan,\\" which means that once an employee vests (after 5 years under our Plan) they are guaranteed a monthly check for the rest of their lives upon retirement. In contrast, with a 401(k) you risk running out of money and losing savings if the stock market goes down. The other significant difference between a 401(k) and a pension plan is that our pension is completely funded by the employer - union workers pay nothing! We consistently negotiate for workers at new union hotels to have the choice to keep their employer\'s 401(k) plan or join the Union\'s pension plan.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Under our Union’s Greater Regional Industry-Wide Agreement, union hotels have to contribute to a pension fund for employees. Unlike a 401(k), a pension plan is a \\"defined benefit plan,\\" which means that once an employee vests (after 5 years under our Plan) they are guaranteed a monthly check for the rest of their lives upon retirement. In contrast, with a 401(k) you risk running out of money and losing savings if the stock market goes down. The other significant difference between a 401(k) and a pension plan is that the GRIWA Pension is completely funded by the employer - union workers pay nothing! We consistently negotiate for workers at new union hotels to have the choice to keep their employer\'s 401(k) plan or join the Union\'s pension plan.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "retirement_pension_25_1500",
+                    "label_IWA": "{{ 'After working for 25 years at your hotel and retiring at age 65, would you receive a monthly pension of $1,500?' | t | raw }}",
+                    "label_GRIWA": "{{ 'After working for 25 years at your hotel and retiring at age 65, would you receive a monthly pension of $450?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>The Union’s pension benefit is based on a worker’s age and years of service at their hotel. A Union hotel worker who retires at age 65, after 25 years of service, will receive $1,500 per month for the rest of their life. If a worker works more than 25 years, they will receive $60 more per year of service, up to $2,400 a month.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>The Union’s pension benefit is based on a worker’s age and years of service at their hotel. A Union hotel worker who retires at age 65, after 25 years of service, will receive $450 per month from the pension. If a worker works more than 25 years, they will receive $9 more per year of service, up to $585 a month. Important Note: This is a brand new pension plan created by our Union in 2013. We expect pension benefits to continue to increase in the years ahead.</p>' | t | raw }}"
+               },
+               {
+                    "type": "sectionheader",
+                    "body": "401(k):"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "retirement_401k",
+                    "label": "{{ 'Does your employer offer a 401(k) plan?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>In addition to earning pension credits, union hotel workers can also save for retirement on their own using the Union’s 401(k) plan.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>In addition to earning pension credits, union hotel workers can also save for retirement on their own using the Union’s 401(k) plan.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Benefit days' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "benefit_days_accrual_method",
+                    "label": "{{ 'How does your hotel calculate the benefit days you are entitled to?' | t | raw }}",
+                    "body": "",
+                    "field": "radio",
+                    "body_2": "",
+                    "choices": [
+                         {
+                              "comparison_value": 0,
+                              "value": "I accrue paid time off hours (PTO) all together based on my hours worked.",
+                              "display": "{{ 'I accrue paid time off hours (PTO) all together based on my hours worked.' | t | raw }}"
+                         },
+                         {
+                              "comparison_value": 1,
+                              "value": "I accrue vacation, sick, personal and holidays based on seniority.",
+                              "display": "{{ 'I accrue vacation, sick, personal and holidays based on seniority.' | t | raw }}"
+                         }
+                    ],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Our members receive separate vacation, sick, personal days, and holidays based on seniority. The minimum number of paid days off a Union-represented worker in ${responses.mergeVars.masterZone.name} gets is 25 days (at 1 year) and the maximum a Union-represented worker gets is 45 days (at 20 years or more).</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Our members receive separate vacation, sick, personal days, and holidays based on seniority. The minimum number of paid days off a union-represented worker outside of NYC gets is 29 days (at 1 year) and the maximum a union-represented worker gets is 44 days (at 15 years or more).</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Vacation days' | t | raw }}",
+          "body_IWA": "{{ '<p>How do your vacation days compare to the Union’s vacation time?</p><table class=\\"table\\"> <tbody><tr class=\\"medium-blue\\"> <td style=\\"border-right: 2px solid #fff; border-bottom: 2px solid #fff;\\"><p>Years of Service</p></td> <td style=\\"border-bottom: 2px solid #fff\\"><p>Annual Paid Vacation</p></td> </tr> <tr> <td><p>1 year but less than 2 years</p></td> <td><p>1 week</p></td> </tr> <tr> <td><p>2 years but less than 5 years</p></td> <td><p>2 weeks</p></td> </tr> <tr> <td><p>5 years but less than 7 years</p></td> <td><p>12 days</p></td> </tr> <tr> <td><p>7 years but less than 15 years</p></td> <td><p>3 weeks</p></td> </tr> <tr> <td><p>15 years but less than 20 years</p></td> <td><p>4 weeks</p></td> </tr> <tr> <td><p>20 years or more</p></td> <td><p>5 weeks</p></td> </tr></tbody></table>' | t | raw }}",
+          "body_GRIWA": "{{ '<p>How do your vacation days compare to the Union’s vacation time?</p><table class=\\"table\\"> <tbody><tr class=\\"medium-blue\\"> <td style=\\"border-right: 2px solid #fff\\"><p>Years of Service</p></td> <td style=\\"border-bottom: 2px solid #fff\\"><p>Annual Paid Vacation</p></td> </tr> <tr> <td><p>1 year but less than 5 years</p></td> <td><p>2 weeks</p></td> </tr> <tr> <td><p>5 years but less than 10 years</p></td> <td><p>3 weeks</p></td> </tr> <tr> <td><p>10 years but less than 15 years</p></td> <td><p>4 weeks</p></td> </tr> <tr> <td><p>15 years or more</p></td> <td><p>5 weeks</p></td> </tr></tbody></table>' | t | raw }}",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "vacation_days",
+                    "label": "",
+                    "body": "",
+                    "field": "radio",
+                    "body_2": "",
+                    "choices": [
+                         {
+                              "comparison_value": 2,
+                              "value": "Better",
+                              "display": "{{ 'Better' | t | raw }}"
+                         },
+                         {
+                              "comparison_value": 1,
+                              "value": "Same",
+                              "display": "{{ 'Same' | t | raw }}"
+                         },
+                         {
+                              "comparison_value": 0,
+                              "value": "Worse",
+                              "display": "{{ 'Worse' | t | raw }}"
+                         }
+                    ],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '${responses.vacation_days == \'Better\' ? \'Worse\' : (responses.vacation_days == \'Same\' ? \'Same\' : \'Better\')}' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Sick and Personal Days' | t | raw }}",
+          "label_GRIWA": "{{ 'Sick/Personal Days' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "sectionheader",
+                    "body": "{{ 'Does your employer:' | t }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "sick_leave_8_days_per_year",
+                    "label_IWA": "{{ 'Give you 8 days of paid sick leave per year?' | t | raw }}",
+                    "label_GRIWA": "{{ 'Give you 10 days of paid sick/personal leave per year?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Union hotel workers receive 8 days of paid sick leave each year.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Union hotel workers in your area receive 10 days of paid sick/personal leave per year.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "sick_leave_how_many_days_per_year",
+                    "label_IWA": "{{ 'How many paid sick days per year do you receive?' | t | raw }}",
+                    "label_GRIWA": "{{ 'How many paid sick/personal days per year do you receive?' | t | raw }}",
+                    "body": "",
+                    "field": "number",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.sick_leave_8_days_per_year == false",
+                    "flip_comparison": false,
+                    "union_comparison_value_IWA": "8",
+                    "union_comparison_value_GRIWA": "10",
+                    "union_response_IWA": "{{ '<p>8</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>10</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "sick_leave_double_pay_tipped_employee",
+                    "label_IWA": "{{ 'Pay you double your regular wages when you call out sick?' | t | raw }}",
+                    "label_GRIWA": "{{ 'Pay you double your regular wages when you call out sick or take a personal day?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.classification == 'Servers'",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>A tipped Union employee who calls out sick or takes a personal day gets paid at the benefit rate, which is double their regular wages.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "personal_days_3",
+                    "label": "{{ 'Does your employer give you 3 paid personal days per year?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.mergeVars.masterZone.contractName == 'IWA'",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Union hotel workers in ${responses.mergeVars.masterZone.name} receive 3 paid personal days off per year — on top of vacation and sick days, and holidays.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "personal_days_how_many_days_per_year",
+                    "label": "{{ 'How many paid personal days per year do you receive?' | t | raw }}",
+                    "body": "",
+                    "field": "number",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.mergeVars.masterZone.contractName == 'IWA' && responses.personal_days_3 == false",
+                    "flip_comparison": false,
+                    "union_comparison_value": "3",
+                    "union_response": "{{ '<p>3 days</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Holidays' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "sectionheader",
+                    "body": "{{ 'Does your employer:' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "holidays_9_per_year",
+                    "label": "{{ 'Give you 9 paid holidays per year?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Union hotel workers receive 9 paid holidays off per year. The holidays are as follows: <ul><li>New Year\'s Day</li><li>Martin Luther King Jr.\'s Birthday</li><li>Presidents\' Day</li><li>Memorial Day</li><li>4th of July</li><li>Labor Day</li><li>Thanksgiving Day</li><li>December 24th</li><li>Christmas Day</li></ul></p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Union hotel workers receive 9 paid holidays off per year. The holidays are as follows: <ul><li>New Year\'s Day</li><li>Martin Luther King Jr.\'s Birthday</li><li>Presidents\' Day</li><li>Memorial Day</li><li>Independence Day</li><li>Labor Day</li><li>Thanksgiving Day</li><li>Day after Thanksgiving</li><li>Christmas Day</li></ul></p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "holidays_how_many_days_per_year",
+                    "label": "{{ 'How many paid holidays per year do you receive?' | t | raw }}",
+                    "body": "",
+                    "field": "number",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.holidays_9_per_year == false",
+                    "flip_comparison": false,
+                    "union_comparison_value": "9",
+                    "union_response": "{{ '<p>9 days per year</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "holidays_double_pay",
+                    "label": "{{ 'Pay you additional holiday pay if you work on a holiday?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '${(!responses.mergeVars.classification.tipped ? \'<p>Union hotel workers who must work on a holiday are paid both their regular wages and holiday pay — effectively double pay and their employer cannot reduce their hours later in the week to avoid paying them extra. This means a Union \' + responses.classification + \' makes \' + currency(responses.mergeVars.wageRate).multiply(2).format() + \' per hour while working on a holiday.</p>\' : (responses.classification == \'Doorperson\' || responses.classification == \'Bellperson\' ? \'<p>\' + responses.classification + \' in union hotels get paid holidays at their benefit day rate, which is \' + currency(responses.mergeVars.wageItemRates[responses.classification + \' Benefit Rate\']).format() + \'. Union hotel workers who must work on a holiday are paid both their regular wages and holiday pay and their employer cannot reduce their hours later in the week to avoid paying them extra. This means a Union \' + responses.classification + \' makes \' + currency(responses.mergeVars.wageItemRates[responses.classification + \' Benefit Rate\']).add(responses.mergeVars.wageRate).format() + \' per hour while working on a holiday.</p>\' : \'<p>Tipped employees in union hotels get paid holidays at their benefit day rate, which is double their regular hourly wages. Union hotel workers who must work on a holiday are paid both their regular wages and holiday pay — effectively triple their regular pay and their employer cannot reduce their hours later in the week to avoid paying them extra. This means a Union \' + responses.classification + \' makes \' + currency(responses.mergeVars.wageRate).multiply(3).format() + \' per hour while working on a holiday.</p>\'))}' | t | raw }}",
+                    "union_response_GRIWA": "{{ '${(!responses.mergeVars.classification.tipped ? \'<p>Union hotel workers who must work on a holiday are paid both their regular wages and holiday pay — effectively double pay and their employer cannot reduce their hours later in the week to avoid paying them extra. This means a Union \' + responses.classification + \' makes \' + currency(responses.mergeVars.wageRate).multiply(2).format() + \' hour while working on a holiday.</p>\' : \'<p>Tipped employees in union hotels get paid holidays at a higher benefit day rate, which is the greater of: 1) double the non-tipped minimum wage or 2) double their regular hourly wages. Union hotel workers who must work on a holiday are paid both their wages and holiday pay — effectively triple their regular pay and their employer cannot reduce their hours later in the week to avoid paying them extra. A union server makes at least \' + currency(responses.mergeVars.wageRate).multiply(3).format() + \' per hour while working on a holiday.</p>\' )}' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Discharge and discipline' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "discharge_discipline_just_cause",
+                    "label": "{{ 'In order to discipline you, does your employer need to prove that the basis for the discipline is accurate and the punishment is fair?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>If you do not have a union contract you are almost certainly an \\"at-will\\" employee. That means that your employer can fire or discipline you for almost any reason, or no reason at all. In contrast, if an employer discharges or disciplines a union worker, the Union is able to question if the employer had the right to do so.</p>' | t | raw }}"
+               },
+               {
+                    "type": "sectionheader",
+                    "body": "{{ 'If you have a complaint about your workload or your manager, are you:' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "grievance_representative",
+                    "label": "{{ 'Allowed to fight your case alongside a representative who knows your rights?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>If a union worker disagrees with discipline, job duties, or management’s behavior, Union Representatives will argue their case with the hotel. If they can’t reach an agreement, the Union can bring the case to an impartial arbitrator who understands the work our members do and the games that employers play.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "grievance_neutral_third_party",
+                    "label": "{{ 'Able to quickly bring this issue to a neutral third party, who is not employed by the hotel and who is authorized to decide how to remedy the complaint?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>In a union hotel, management does not have the final say. The impartial arbitrator does. The arbitrator decides whether a union worker\'s discharge or discipline was justified and should be upheld or reversed. Discharged workers often get their jobs back, frequently with full back pay. This is the foundation of every Union contract. Because Union members have job security, they can enforce all of the other rights in their contract, stand up against unfair treatment, and negotiate with their employer without fear of retaliation.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Job security' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "job_security_recall_rights",
+                    "label": "{{ 'Do you have the contractually guaranteed right to be called back to work after a layoff?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Under our master contracts, laid off union workers have unlimited recall rights, meaning that no matter how long their layoff lasts they have the right to go back to their job as soon as enough work is available again.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "job_security_subcontract_protections",
+                    "label": "{{ 'Do you have any protections that prevent management from replacing you with subcontracted or agency workers?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>In a union hotel, management is not allowed to subcontract any union work. With subcontracting on the rise after the COVID-19 pandemic, this is an incredibly powerful protection.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "job_security_assignment_protections",
+                    "label": "{{ 'Do you have any protections that prevent management from doing your work or assigning overtime to others while you are laid off?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response_IWA": "{{ '<p>Our contract prohibits any non-union employee (including managers and contractors) from doing union work. It also prohibits management from scheduling overtime while others in the classification are laid off.</p>' | t | raw }}",
+                    "union_response_GRIWA": "{{ '<p>Our contract prohibits any non-union employee (including managers and contractors) from doing union work. It also prohibits management from scheduling overtime while others in the classification are laid off except in the event the overtime is less than 2 hours and the result of an employee coming in late or leaving early with less than 1 hour notice.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "job_security_new_management_protections",
+                    "label": "{{ 'If your hotel sells or changes operators, do you have any guarantee that you will keep your job?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Our contract requires any new owner or operator to recognize the Union, sign the contract, and keep all the union employees and benefits.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Seniority' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "seniority_rights",
+                    "label": "{{ 'Does your employer use seniority to determine scheduling rights and layoffs?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Layoffs and scheduling rights are determined by seniority (the length of time you\'ve worked at the job) in a union hotel. Seniority is fair and prevents management from playing games or using favoritism.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Safety and health' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "refuse_dangerous_work",
+                    "label": "{{ 'Do you have the right to raise a specific hazard at work that you believe could impact you or your coworkers\' health and safety that is not covered by OSHA?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>The comprehensive health and safety provisions in our contract give workers rights that go above and beyond the basic protections provided by OSHA, including the right to bring in an outside health and safety expert to investigate and to refuse an assignment that they believe in good faith to be unsafe and to subject them to dangerous conditions.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Panic buttons' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "sectionheader",
+                    "body": "{{ 'Does your employer:' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "panic_buttons",
+                    "label": "{{ 'Provide panic button devices for all workers who enter guest rooms?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Workers use panic buttons to alert security that they are in a dangerous situation. They provide an accurate location, such as the exact guest room where the worker is located. Our union pioneered the use of panic buttons in hotels in 2012. Since then, we have fought to pass legislation requiring panic buttons in all New Jersey hotels and the concept has caught on in cities around the country.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": true,
+                    "handle": "panic_button_inspections",
+                    "label": "{{ 'Regularly inspect the panic buttons to ensure that they are working properly?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.panic_buttons",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Like any electronic device, panic buttons are not useful if they are not working properly. Ensuring that union workers have panic buttons is not enough, so the Union created a task force of health and safety experts and union staff to regularly ensure that the panic buttons are working as intended.</p>' | t | raw }}"
+               }
+          ]
+     },
+     {
+          "label": "{{ 'Additional Benefits' | t | raw }}",
+          "body": "",
+          "applicable_if": "",
+          "comparable": true,
+          "blocks": [
+               {
+                    "type": "sectionheader",
+                    "body": "{{ 'Does your employer:' | t }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "network_of_attorneys",
+                    "label": "{{ 'Provide access to a network of attorneys who can help you with situations like buying a home, immigration, divorce, and landlord/tenant issues?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "responses.mergeVars.masterZone.contractName == 'IWA'",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>Active and retired union hotel workers are eligible to use our Pre-Paid Legal Fund, which gives them access to attorneys who can help with situations such as buying a home, wills, immigration, divorce, and landlord/tenant issues for free. This program is entirely funded by employers, rather than the workers.</p>' | t | raw }}"
+               },
+               {
+                    "type": "question",
+                    "subquestion": false,
+                    "handle": "yearly_scholarships",
+                    "label": "{{ 'Offer scholarships for your children?' | t | raw }}",
+                    "body": "",
+                    "field": "boolean",
+                    "body_2": "",
+                    "choices": [],
+                    "default": "",
+                    "required": true,
+                    "evaluable": true,
+                    "show_comparison": true,
+                    "applicable_if": "",
+                    "flip_comparison": false,
+                    "union_comparison_value": "1",
+                    "union_response": "{{ '<p>For more than 30 years, the dependents of active union hotel workers have been eligible to apply for college scholarships through our Scholarship Program, which is entirely funded by employers. The scholarships, which are given to 30-35 incoming college students every year, are for $12,000 each — $3,000 for each year at a 4-year college or university.</p>' | t | raw }}"
+               }
+          ]
+     }
+]

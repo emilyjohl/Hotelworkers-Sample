@@ -1,0 +1,155 @@
+<script>
+    $(document).ready(function() {
+        $.getJSON('/shops2.json', function(shops) {
+            var html = '<option> <\/option>';
+            for(var i=0; i<shops.length; i++) {
+                html += '<option value="' + shops[i].code + '">' + shops[i].name + '</option>';
+            }
+            $('#unionEmployer').html(html + '<option value="Other">{{ "Other" | t }}<\/option>');
+        });
+
+        $('#unionEmployer').on('change', function() {
+            if($(this).val() == 'Other') {
+                $('#unionEmployerOther_Field').show();
+            } else {
+                $('#unionEmployerOther_Field').hide();
+            }
+        }).change();
+
+        $('form#pup-registration').on('submit', function(e) {
+            e.preventDefault;
+
+            var form = $(this);
+
+            if(form.find('input[name="session"]:checked').val()) {
+                form.find('button, input[type="submit"]').attr('disabled', 'disabled');
+
+                $.ajax({
+                    url:'/form-entries/store',
+                    type: 'post',
+                    data: $(this).serializeJSON()
+                }).done(function(response) {
+                    form.find('button, input[type="submit"]').removeAttr('disabled');
+
+                    $('input[type="text"], input[type="email"], input[type="date"], textarea').val('');
+                    $('input[type="radio"], input[type="checkbox"]').prop('checked', false);
+                    clear_all_file_loads();
+
+                    Swal.fire({
+                        title: _t['Thank you!'],
+                        icon: 'success'
+                    });
+
+                    window.scrollTo(0,0);
+                }).fail(function(response, responseText) {
+                    form.find('button, input[type="submit"]').removeAttr('disabled');
+
+                    Swal.fire({
+                        title: '{{ "An error occurred. Please refresh this page and try again." | t }}',
+                        icon: 'error'
+                    });
+                });
+            } else {
+                Swal.fire({
+                    title: '{{ "You must choose a date." | t }}',
+                    icon: 'warning'
+                });
+            }
+
+            return false;
+        });
+    });
+</script>
+
+<style type="text/css">
+    .class {
+        margin: 0 0 1em 0;
+        overflow: auto;
+    }
+</style>
+
+<div class="band padded-below">
+    <div class="band-inner">
+        <form id="pup-registration" class="form-panel narrow">
+            <input name="fid" type="hidden" value="50">
+            <input name="language" type="hidden">
+
+            <div class="row">
+                <div class="form-group col-md-6 col-sm-6">
+                    <label for="firstName">{{ "First Name" | t }}</label>
+                    <input class="form-control" id="firstName" name="firstName" required="required" type="text">
+                </div>
+                <div class="form-group col-md-6 col-sm-6">
+                    <label for="lastName">{{ "Last Name" | t }}</label>
+                    <input class="form-control" id="lastName" name="lastName" required="required" type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6 col-sm-6">
+                    <label for="firstName">{{ "Most Recent Union Employer?" | t }}</label>
+                    <select class="form-control" id="unionEmployer" name="unionEmployer" required></select>
+                </div>
+                <div class="form-group col-md-6 col-sm-6" id="unionEmployerOther_Field">
+                    <label for="unionEmployerOther">{{ "Other Most Recent Union Employer" | t }}</label>
+                    <input class="form-control" id="unionEmployerOther" name="unionEmployerOther" type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6 col-sm-6">
+                    <label for="personalPhoneNumber">{{ "Phone Number" | t }}</label>
+                    <!-- PHONE PATTERN:
+                    optional leading +1 or just 1,
+                    followed by zero-or-more non-digits,
+                    followed by 3 digits,
+                    followed by zero-or-more non-digits,
+                    followed by 3 digits,
+                    followed by zero-or-more non-digits,
+                    followed by 4 digits,
+                    followed by zero-or-more non-digits.
+                    -->
+                    <input class="form-control" id="personalPhoneNumber" name="personalPhoneNumber" type="text" required="required"
+                        pattern="[^\d]*[1]?[^\d]*[\d][\d][\d][^\d]*[\d][\d][\d][^\d]*[\d][\d][\d][\d][^\d]*"
+                        size="20" title="Please enter your phone number in the following format XXX-XXX-XXXX.">
+                </div>
+                <div class="form-group col-md-6 col-sm-6">
+                    <label for="email">{{ "Email Address" | t }}</label>
+                    <input class="form-control" id="email" name="email" required="required" type="email">
+                </div>
+            </div>
+
+            <div class="class-list">
+                <div class="class">
+                    <h6>{{ "I can attend on:" | t }}</h6>
+                    <div class="col-md-12">
+                        <div class="class-session">
+                            <label>
+                              <input type="radio" value="Monday, October 16th, 4PM-6PM" name="session">
+                              {{ "Monday, October 16th, 4PM-6PM" | t }}
+                            </label>
+                        </div>
+                        <div class="class-session">
+                            <label>
+                              <input type="radio" value="Tuesday, November 14th, 12PM-2PM" name="session">
+                              {{ "Tuesday, November 14th, 12PM-2PM" | t }}
+                            </label>
+                        </div>
+                        <div class="class-session">
+                            <label>
+                              <input type="radio" value="Wednesday, December 6th, 4PM-6PM" name="session">
+                              {{ "Wednesday, December 6th, 4PM-6PM" | t }}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <button class="btn btn-primary" type="submit">{{ "Submit" | t }}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
